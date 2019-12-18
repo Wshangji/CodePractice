@@ -91,7 +91,7 @@ struct Listnode* Insert_Listnode(struct Listnode *head, int x){
     struct Listnode *t,*p;
     t = head;
     p = (struct Listnode*)malloc(sizeof(struct Listnode));
-    if(x < head->data){
+    if(x < head->data){         //插入头节点
         p->data = head->data;
         p->next = head->next;
         head->data = x;
